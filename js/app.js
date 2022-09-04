@@ -4,6 +4,9 @@
 
 /*---------------------------- Variables (state) ----------------------------*/
 let board, turn, winner
+// board represent the state of the squares 
+//turn track whose turn it is 
+//winner represent if anyone has won yet, or if a tie has occurred.
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -17,29 +20,19 @@ const messageEl = document.querySelector("#message")
 
 /*-------------------------------- Functions --------------------------------*/
 init () 
-//calling function when app loads
-
+//calling init function when app loads
+//create init function to initialize game state
 function init(){
   board = [null, null, null, null, ,null, null, null, null, null]
   //null meaning it is empty or unknown
+  turn = 1
+  //1 represents player X
+  winner = null 
+  render()
+  //call function render
 
 }
 
-// Step 3 - Upon loading, the game state should be initialized, and a function 
-//          should be called to render this game state
-
- // // 3a) Create a function called `init`.
-
-  //// 3b) Call this `init` function when the app loads.
-
-//  // 3c) Set the `board` variable to an array containing nine `null`s to 
-//  //    represent empty squares.
-
-  // 3d) Set the `turn` to `1` - which will represent player X.
-
-  // 3e) Set the `winner` to `null`.
-
-  // 3f) Call a function called `render` at the end of the `init` function.
 
 // Step 4 - The state of the game should be rendered to the user
 
