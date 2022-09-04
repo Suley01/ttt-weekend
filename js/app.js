@@ -28,19 +28,23 @@ function init(){
   turn = 1
   //1 represents player X
   winner = null 
-  render()
+  // render()
   //call function render
 
 }
 
 
+
 // Step 4 - The state of the game should be rendered to the user
 
-  // 4a) Create a function called `render`.
+ // // 4a) Create a function called `render`.
+function render(){
+
+}
+board.forEach(currIdx.squareEls)
 
   // 4b) Loop over `board` and for each element:
-  //     - Use the current index of the iteration to access the corresponding 
-  //       square in the `squareEls` array.
+  //     - Use the current index of the iteration to access the corresponding square in the `squareEls` array.
   //     - Style that square however you wish, dependent on the value  
   //       contained in the current cell being iterated over (`-1`, `1`, or
   //       `null`).  
