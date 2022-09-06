@@ -28,7 +28,7 @@ function init(){
   turn = 1
   //1 represents player X
   winner = null 
-  // render()
+  render()
   //call function render
 
 }
@@ -39,9 +39,13 @@ function init(){
 
  // // 4a) Create a function called `render`.
 function render(){
-
+  board.forEach(function(square, i){
+    if (board[i] === 1){
+      squareEls[i].textContent = 'X'
+    }
+    
+  })
 }
-board.forEach(currIdx.squareEls)
 
   // 4b) Loop over `board` and for each element:
   //     - Use the current index of the iteration to access the corresponding square in the `squareEls` array.
